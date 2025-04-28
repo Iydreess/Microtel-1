@@ -5,49 +5,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - Microtel Technologies</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <img src="./images/logo.png" alt="Microtel Logo"> 
-    <div id="links">
-      <a href="./index.html">Home</a>
-      <a href="./about.html">About Us</a>
-      <a href="./services.html">Services</a>
-      <a href="#" class="active">Contact</a>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <img src="./images/logo.png" alt="Microtel Logo" class="logo">
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./services.html">Services</a>
+        <a href="#" class="active">Contact</a>
+      </div>
     </div>
   </nav>
 
-  <section>
-    <h1>Contact Us</h1>
-    <p>We’d love to hear from you. Get in touch for inquiries, quotes, or partnerships.</p>
+  <!-- Hero Section -->
+  <header class="hero" style="background: url('./images/started/contact-hero.jpg') center/cover no-repeat;">
+    <div class="container hero-content">
+      <h1 class="reveal">Get in Touch</h1>
+      <p class="reveal">We’d love to hear from you. Let's build something amazing together.</p>
+    </div>
+  </header>
 
-    <!-- Contact Form -->
-    <form action="https://formspree.io/f/mkgjlgok" method="POST" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 1em;">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" style="background-color: #00ccff; color: white; padding: 0.75em; border: none; border-radius: 5px; cursor: pointer;">Send Message</button>
-    </form>
-
-    <!-- Contact Info -->
-    <div style="margin-top: 2em;">
-      <p><strong>Email:</strong> contact@microteltechnologies.com</p>
-      <p><strong>Phone:</strong> +254 724 464 248</p>
-      <p><strong>Location:</strong> Nairobi, Kenya</p>
+  <!-- Contact Form Section -->
+  <section class="services-overview">
+    <div class="container">
+      <h2>Send Us a Message</h2>
+      <form action="https://formspree.io/f/mkgjlgok" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required class="reveal">
+        <input type="email" name="email" placeholder="Your Email" required class="reveal">
+        <input type="text" name="subject" placeholder="Subject" required class="reveal">
+        <textarea name="message" rows="5" placeholder="Your Message" required class="reveal"></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
     </div>
   </section>
 
-  <footer>
-    <div class="column">
-      <h1>
-        <button>Microtel</button>
-        <span>Technologies</span>
-      </h1>
-      <div id="copy">&copy; 2025 Microtel Technologies. All rights reserved.</div>
+ <!-- Contact Information Section -->
+<section class="about-snapshot">
+  <div class="container">
+    <h2>Contact Details</h2>
+    <div class="contact-info-grid">
+      
+      <div class="contact-card reveal">
+        <h3>Email</h3>
+        <p><a href="mailto:contact@microteltechnologies.com">contact@microteltechnologies.com</a></p>
+      </div>
+
+      <div class="contact-card reveal">
+        <h3>Phone</h3>
+        <p><a href="tel:+254724464248">+254 724 464 248</a></p>
+      </div>
+
+      <div class="contact-card reveal">
+        <h3>Location</h3>
+        <p>Nairobi, Kenya</p>
+      </div>
+
     </div>
-    <div class="column sitemap">
+  </div>
+</section>
+
+<!-- Google Maps Location Section -->
+<section class="about-snapshot">
+  <div class="container">
+    <h2>Our Location</h2>
+    <div class="map-card reveal">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.7948312482406!2d36.82194671620353!3d-1.2920651986859195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10ec4e17c6b1%3A0x7f9c94bb9935b5a7!2sNairobi!5e0!3m2!1sen!2ske!4v1714544177711!5m2!1sen!2ske" 
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="container footer-grid">
+    
+    <div class="footer-column">
+      <h1 class="footer-logo"><button>Microtel</button> <span>Technology</span></h1>
+      <p id="copy">&copy; 2025 Microtel Technology. All rights reserved.</p>
+    </div>
+
+    <div class="footer-column">
       <h2>Sitemap</h2>
       <ul>
         <li><a href="./about.html">About</a></li>
         <li><a href="./contact.html">Contact</a></li>
-        <li><a
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h2>Follow Us</h2>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/microtel_technology"><img src="./images/icons/instagram.svg" alt="Instagram"></a>
+          <a href="https://wa.me/254724464248"><img src="./images/icons/whatsapp.svg" alt="WhatsApp"></a>
+          <a href="#"><img src="./images/icons/facebook.svg" alt="Facebook"></a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTop">&#8679;</a>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+
+</body>
+</html>

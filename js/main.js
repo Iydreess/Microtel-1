@@ -15,3 +15,8 @@ backToTopButton.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+// Loader
+window.addEventListener('load', () => {
+    document.body.classList.add('loaded');
+  });
+  

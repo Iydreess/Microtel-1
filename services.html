@@ -5,56 +5,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services - Microtel Technologies</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <img src="./images/logo.png" alt="Microtel Logo"> 
-    <div id="links">
-      <a href="./index.html">Home</a>
-      <a href="./about.html">About Us</a>
-      <a href="#" class="active">Services</a>
-      <a href="./contact.html">Contact</a>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <img src="./images/logo.png" alt="Microtel Logo" class="logo">
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="#" class="active">Services</a>
+        <a href="./contact.html">Contact</a>
+      </div>
     </div>
   </nav>
 
-  <section>
-    <h1>Our Services</h1>
-    <ul>
-      <li><strong>Web Development & Designing</strong> – Custom websites, E-commerce, CMS, responsive design.</li>
-      <li><strong>Mobile Application Development</strong> – Android/iOS apps, cross-platform (Flutter, React Native).</li>
-      <li><strong>Systems Development</strong> – Enterprise solutions, CRM, database systems, integrations.</li>
-      <li><strong>EdTech Solutions</strong> – E-learning platforms, assessments, student info systems.</li>
-      <li><strong>Cybersecurity</strong> – Audits, data protection, network security, training.</li>
-      <li><strong>Graphic Design</strong> – Branding, brochures, social media graphics, UI/UX.</li>
-      <li><strong>Software & Hardware Installation</strong> – Setup, maintenance, upgrades, repairs.</li>
-      <li><strong>Digital Marketing</strong> – SEO, social media, email campaigns, content strategy.</li>
-    </ul>
+  <!-- Hero Section -->
+  <header class="hero" style="background: url('./images/started/services-hero.jpg') center/cover no-repeat;">
+    <div class="container hero-content">
+      <h1 class="reveal">Our Services</h1>
+      <p class="reveal">Innovative IT solutions designed to empower your success.</p>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section class="services-overview">
+    <div class="container">
+      <h2>What We Offer</h2>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <h3>Web Development & Design</h3>
+          <p>Custom websites, E-commerce platforms, CMS solutions, and responsive designs tailored to your brand.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <h3>Mobile Application Development</h3>
+          <p>Android/iOS apps, cross-platform apps (Flutter, React Native) built for performance and user experience.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <h3>Systems Development</h3>
+          <p>Enterprise solutions, CRM systems, database management, and custom software integrations.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <h3>EdTech Solutions</h3>
+          <p>Dynamic e-learning platforms, assessment systems, and smart educational tools for institutions and businesses.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <h3>Cybersecurity</h3>
+          <p>Risk audits, data protection, network security, cybersecurity training and compliance solutions.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <h3>Graphic Design</h3>
+          <p>Brand identity creation, brochures, social media graphics, UI/UX designs to captivate your audience.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <h3>Software & Hardware Installation</h3>
+          <p>Setup, maintenance, upgrades, diagnostics and repairs for seamless business operations.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <h3>Digital Marketing</h3>
+          <p>SEO strategies, social media management, email campaigns, and content marketing to grow your online presence.</p>
+        </div>
+
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <div class="column">
-      <h1>
-        <button>Microtel</button>
-        <span>Technologies</span>
-      </h1>
-      <div id="copy">&copy; 2025 Microtel Technologies. All rights reserved.</div>
+  <!-- CTA Section -->
+  <section class="cta-contact">
+    <div class="container">
+      <h2>Ready to Transform Your Business?</h2>
+      <a href="./contact.html" class="btn-primary">Get in Touch</a>
     </div>
-    <div class="column sitemap">
-      <h2>Sitemap</h2>
-      <ul>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="#">Privacy policy</a></li>
-        <li><a href="./services.html">Services</a></li>
-        <li><a href="#">FAQs</a></li>
-      </ul>
-    </div>
-    <div class="column socials">
-      <h2>Social</h2>
-      <a href="https://www.instagram.com/microtel_technology"><img src="./images/icons/instagram.svg" alt="Instagram"></a>
-      <a href="https://wa.me/254724464248"><img src="./images/icons/whatsapp.svg" alt="WhatsApp"></a>
-      <a href="#"><img src="./images/icons/facebook.svg" alt="Facebook"></a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-column">
+        <h1><button class="logo-btn">Microtel</button><span>Technologies</span></h1>
+        <p id="copy">&copy; 2025 Microtel Technologies. All rights reserved.</p>
+      </div>
+
+      <div class="footer-column">
+        <h2>Sitemap</h2>
+        <ul>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h2>Social</h2>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/microtel_technology"><img src="./images/icons/instagram.svg" alt="Instagram"></a>
+          <a href="https://wa.me/254724464248"><img src="./images/icons/whatsapp.svg" alt="WhatsApp"></a>
+          <a href="#"><img src="./images/icons/facebook.svg" alt="Facebook"></a>
+        </div>
+      </div>
     </div>
   </footer>
+
+  <!-- Scroll Reveal Script -->
+  <script src="./js/main.js"></script>
+  <a href="#" class="back-to-top" id="backToTop">&#8679;</a>
+<script src="./js/main.js"></script> <!-- Your existing script -->
+
 </body>
 </html>

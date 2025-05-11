@@ -31,17 +31,26 @@
     </div>
   </header>
 
-  <!-- Contact Form Section -->
-  <section class="services-overview">
-    <div class="container">
-      <h2>Send Us a Message</h2>
-      <form action="https://formspree.io/f/mkgjlgok" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required class="reveal">
-        <input type="email" name="email" placeholder="Your Email" required class="reveal">
-        <input type="text" name="subject" placeholder="Subject" required class="reveal">
-        <textarea name="message" rows="5" placeholder="Your Message" required class="reveal"></textarea>
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
+ <!-- Contact Form Section -->
+<section class="services-overview">
+  <div class="container">
+    <h2 class="reveal">Send Us a Message</h2>
+    <form 
+      action="https://formspree.io/f/mkgjlgok" 
+      method="POST" 
+      class="contact-form"
+      onsubmit="window.location.href='./thankyou.html'; return false;">
+      
+      <input type="text" name="name" placeholder="Your Name" required class="reveal">
+      <input type="email" name="email" placeholder="Your Email" required class="reveal">
+      <input type="text" name="subject" placeholder="Subject" required class="reveal">
+      <textarea name="message" rows="5" placeholder="Your Message" required class="reveal"></textarea>
+      
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
     </div>
   </section>
 
